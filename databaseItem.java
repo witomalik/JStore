@@ -8,26 +8,23 @@
 public class databaseItem
 {
     // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class databaseItem
-     */
-    public databaseItem()
+    private String listItem;
+    
+    public void addItem()
     {
         // initialise instance variables
-        x = 0;
+        
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
+    
+    public void removeItem()
     {
-        // put your code here
-        return x + y;
+        // initialise instance variables
+        
+    }
+    
+    public void getItemDatabase()
+    {
+        // initialise instance variables
+        
     }
 }

@@ -8,26 +8,103 @@
 public class supplier
 {
     // instance variables - replace the example below with your own
-    private int x;
+    protected int id;
+    protected String name;
+    protected String email;
+    protected String phoneNumber;
+    protected String city;
 
     /**
-     * Constructor for objects of class supplier
+     * Constructor for objects of class item
      */
     public supplier()
     {
         // initialise instance variables
-        x = 0;
+        
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
+    
+    public int getId()
     {
-        // put your code here
-        return x + y;
+        // initialise instance variables
+        return 0;
     }
+    
+    public String getName()
+    {
+        // initialise instance variables
+        return "";
+    }
+    
+    public String getEmail()
+    {
+        // initialise instance variables
+        return "";
+    }
+    
+    public String getPhoneNumber()
+    {
+        // initialise instance variables
+        return "";
+    }
+    
+    public String getCity()
+    {
+        // initialise instance variables
+        return "";
+    }
+    
+    public int setId()
+    {
+        // initialise instance variables
+        return 0;
+    }
+    
+    public int getStock()
+    {
+        // initialise instance variables
+        return 0;
+    }
+    
+    public int getPrice()
+    {
+        // initialise instance variables
+        return 0;
+    }
+    
+    public String getCategory()
+    {
+        // initialise instance variables
+        return "";
+    }
+    
+    public int setId(int id)
+    {
+        // initialise instance variables
+        return 0;
+    }
+    
+    public String setName(String name)
+    {
+        // initialise instance variables
+        return "";
+    }
+    
+    public String setEmail(String email)
+    {
+        // initialise instance variables
+        return "";
+    }
+    
+    public String setPhoneNumber(String phoneNumber)
+    {
+        // initialise instance variables
+        return "";
+    }
+    
+    public String setCity(String city)
+    {
+        // initialise instance variables
+        return "";
+    }
+    
 }
