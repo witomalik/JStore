@@ -77,34 +77,34 @@ public class supplier
         return "";
     }
     
-    public int setId(int id)
+    public void setId(int id)
     {
         // initialise instance variables
-        return 0;
+        
     }
     
-    public String setName(String name)
+    public void setName(String name)
     {
         // initialise instance variables
-        return "";
+        
     }
     
-    public String setEmail(String email)
+    public void setEmail(String email)
     {
         // initialise instance variables
-        return "";
+        
     }
     
-    public String setPhoneNumber(String phoneNumber)
+    public void setPhoneNumber(String phoneNumber)
     {
         // initialise instance variables
-        return "";
+        
     }
     
-    public String setCity(String city)
+    public void setCity(String city)
     {
         // initialise instance variables
-        return "";
+        
     }
     
 }

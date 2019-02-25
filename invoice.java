@@ -47,27 +47,27 @@ public class invoice
         return 0;
     }
     
-    public int setId(int id)
+    public void setId(int id)
     {
         // initialise instance variables
-        return 0;
+        
     }
     
-    public int setIdItem(int idItem)
+    public void setIdItem(int idItem)
     {
         // initialise instance variables
-        return 0;
+        
     }
     
-    public String setDate(String date)
+    public void setDate(String date)
     {
         // initialise instance variables
-        return "";
+        
     }
     
-    public int setTotalPrice(int totalPrice)
+    public void setTotalPrice(int totalPrice)
     {
         // initialise instance variables
-        return 0;
+        
     }
 }

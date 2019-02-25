@@ -53,34 +53,34 @@ public class item
         return "";
     }
     
-    public int setId(int id)
+    public void setId(int id)
     {
         // initialise instance variables
-        return 0;
+        
     }
     
-    public String setName(String name)
+    public void setName(String name)
     {
         // initialise instance variables
-        return "";
+        
     }
     
-    public int setStock(int stock)
+    public void setStock(int stock)
     {
         // initialise instance variables
-        return 0;
+        
     }
     
-    public int setPrice(int price)
+    public void setPrice(int price)
     {
         // initialise instance variables
-        return 0;
+        
     }
     
-    public String setCategory(String category)
+    public void setCategory(String category)
     {
         // initialise instance variables
-        return "";
+        
     }
 
 }
