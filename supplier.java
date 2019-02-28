@@ -5,106 +5,90 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-public class supplier
+public class Supplier
 {
     // instance variables - replace the example below with your own
-    protected int id;
-    protected String name;
-    protected String email;
-    protected String phoneNumber;
-    protected String city;
+    private int id;
+    private String name;
+    private String email;
+    private String phoneNumber;
+    private Location location;
 
     /**
      * Constructor for objects of class item
      */
-    public supplier()
+    public Supplier(int id, String name, String email, String phoneNumber, Location location)
     {
         // initialise instance variables
-        
+        this.id=id;
+        this.name=name;
+        this.email=email;
+        this.phoneNumber=phoneNumber;
+        this.location=location;
     }
     
     public int getId()
     {
         // initialise instance variables
-        return 0;
+        return id;
     }
     
     public String getName()
     {
         // initialise instance variables
-        return "";
+        return name;
     }
     
     public String getEmail()
     {
         // initialise instance variables
-        return "";
+        return email;
     }
     
     public String getPhoneNumber()
     {
         // initialise instance variables
-        return "";
+        return phoneNumber;
     }
     
-    public String getCity()
+    public Location getLocation()
     {
         // initialise instance variables
-        return "";
+        return location;
     }
-    
-    public int setId()
-    {
-        // initialise instance variables
-        return 0;
-    }
-    
-    public int getStock()
-    {
-        // initialise instance variables
-        return 0;
-    }
-    
-    public int getPrice()
-    {
-        // initialise instance variables
-        return 0;
-    }
-    
-    public String getCategory()
-    {
-        // initialise instance variables
-        return "";
-    }
-    
+            
     public void setId(int id)
     {
         // initialise instance variables
-        
+        this.id=id;
     }
     
     public void setName(String name)
     {
         // initialise instance variables
-        
+        this.name=name;
     }
     
     public void setEmail(String email)
     {
         // initialise instance variables
-        
+        this.email=email;
     }
     
     public void setPhoneNumber(String phoneNumber)
     {
         // initialise instance variables
-        
+        this.phoneNumber=phoneNumber;
     }
     
-    public void setCity(String city)
+    public void setLocation(Location location)
     {
         // initialise instance variables
-        
+        this.location=location;
     }
     
+    public void printData (){
+        //
+        System.out.println(name);
+    }
 }

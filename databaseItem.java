@@ -5,26 +5,32 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-public class databaseItem
+public class DatabaseItem
 {
     // instance variables - replace the example below with your own
-    private String listItem;
+    private String[] listItem;
+    private Item item;
     
-    public void addItem()
+    public boolean addItem(Item item)
     {
         // initialise instance variables
-        
+        return true;
     }
     
-    public void removeItem()
+    public boolean removeItem(Item item)
     {
         // initialise instance variables
-        
+        return true;
     }
     
-    public void getItemDatabase()
+    public Item getItem()
     {
         // initialise instance variables
-        
+        return item;
     }
+    
+    public String[] getItemDatabase(){
+        return listItem;
+    }
+    
 }
