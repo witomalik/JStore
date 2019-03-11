@@ -1,13 +1,14 @@
 
+
 /**
- * Write a description of class item here.
+ * Merupakan Class Item.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Muhammad Wito Malik
+ * @version 28/02/2019
  */
 public class Item
 {
-    // instance variables - replace the example below with your own
+    // variabel yang digunakan dalam class
     private int id;
     private String name;
     private int stock;
@@ -16,7 +17,13 @@ public class Item
     private Supplier supplier;
 
     /**
-     * Constructor for objects of class item
+     * Constructor for objects of class Item
+     * @param id
+     * @param name
+     * @param stock
+     * @param price
+     * @param category
+     * @param supplier
      */
     public Item(int id, String name, int stock, int price, String category, Supplier supplier)
     {
@@ -29,80 +36,132 @@ public class Item
         this.supplier=supplier;
     }
     
+    /**
+     * Method of class Item
+     * @return id
+     */
     public int getId()
     {
-        // initialise instance variables
+        // return dari accessor 
         return id;
     }
     
+    /**
+     * Method of class Item
+     * @return name
+     */
     public String getName()
     {
-        // initialise instance variables
+        // return dari accessor 
         return name;
     }
     
+    /**
+     * Method of class Item
+     * @return stock
+     */
     public int getStock()
     {
-        // initialise instance variables
+        // return dari accessor 
         return stock;
     }
     
+    /**
+     * Method of class Item
+     * @return price
+     */
     public int getPrice()
     {
-        // initialise instance variables
+        // return dari accessor 
         return price;
     }
     
+    /**
+     * Method of class Item
+     * @return category
+     */
     public String getCategory()
     {
-        // initialise instance variables
+        // return dari accessor 
         return category;
     }
     
+    /**
+     * Method of class Item
+     * @return supplier
+     */
     public Supplier getSupplier()
     {
-        // initialise instance variables
+        // return dari accessor 
         return supplier;
     }
     
+    /**
+     * Method of class Item
+     * @param id
+     */
     public void setId(int id)
     {
         // initialise instance variables
         this.id=id;
     }
     
+    /**
+     * Method of class Item
+     * @param name
+     */
     public void setName(String name)
     {
         // initialise instance variables
         this.name=name;
     }
     
+    /**
+     * Method of class Item
+     * @param stock
+     */
     public void setStock(int stock)
     {
         // initialise instance variables
         this.stock=stock;
     }
     
+    /**
+     * Method of class Item
+     * @param price
+     */
     public void setPrice(int price)
     {
         // initialise instance variables
         this.price=price;
     }
     
+    /**
+     * Method of class Item
+     * @param category
+     */
     public void setCategory(String category)
     {
         // initialise instance variables
         this.category=category;
     }
     
+    /**
+     * Method of class Item
+     * @param supplier
+     */
     public void setSupplier(Supplier supplier)
     {
         // initialise instance variables
         this.supplier=supplier;
     }
     
+    /**
+     * Method of class Item
+     * fungsi untuk print variable name
+     */
     public void printData(){
-        //
+        //print out variable name
         System.out.println(name);
     }
     

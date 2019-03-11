@@ -1,35 +1,52 @@
 
 /**
- * Write a description of class databaseItem here.
+ * Merupakan Class DatabaseItem.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Muhammad Wito Malik
+ * @version 28/02/2019
  */
 public class DatabaseItem
 {
-    // instance variables - replace the example below with your own
+    // variabel yang digunakan dalam class
     private String[] listItem;
     private Item item;
     
-    public boolean addItem(Item item)
+    /**
+     * Method of class DatabaseItem
+     * @return true
+     */
+    public static boolean addItem(Item item)
     {
-        // initialise instance variables
+        // return dari accessor 
         return true;
     }
     
+    /**
+     * Method of class DatabaseItem
+     * @return true
+     */
     public boolean removeItem(Item item)
     {
-        // initialise instance variables
+        // return dari accessor 
         return true;
     }
     
+    /**
+     * Method of class DatabaseItem
+     * @return item
+     */
     public Item getItem()
     {
-        // initialise instance variables
+        // return dari accessor 
         return item;
     }
     
+    /**
+     * Method of class DatabaseItem
+     * @return listItem
+     */
     public String[] getItemDatabase(){
+        // return dari accessor 
         return listItem;
     }
     

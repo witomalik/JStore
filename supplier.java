@@ -1,13 +1,13 @@
 
 /**
- * Write a description of class supplier here.
+ * Merupakan Class Supplier.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Muhammad Wito Malik
+ * @version 28/02/2019
  */
 public class Supplier
 {
-    // instance variables - replace the example below with your own
+    // variabel yang digunakan dalam class
     private int id;
     private String name;
     private String email;
@@ -15,7 +15,12 @@ public class Supplier
     private Location location;
 
     /**
-     * Constructor for objects of class item
+     * Constructor for objects of class Supplier
+     * @param id
+     * @param name
+     * @param email
+     * @param phoneNumber
+     * @param location
      */
     public Supplier(int id, String name, String email, String phoneNumber, Location location)
     {
@@ -27,68 +32,112 @@ public class Supplier
         this.location=location;
     }
     
+    /**
+     * Method of class Supplier
+     * @return id
+     */
     public int getId()
     {
-        // initialise instance variables
+        // return dari accessor 
         return id;
     }
     
+    /**
+     * Method of class Supplier
+     * @return name
+     */
     public String getName()
     {
-        // initialise instance variables
+        // return dari accessor 
         return name;
     }
     
+    /**
+     * Method of class Supplier
+     * @return getEmail
+     */
     public String getEmail()
     {
-        // initialise instance variables
+        // return dari accessor 
         return email;
     }
     
+    /**
+     * Method of class Supplier
+     * @return phoneNumber
+     */
     public String getPhoneNumber()
     {
-        // initialise instance variables
+        // return dari accessor 
         return phoneNumber;
     }
     
+    /**
+     * Method of class Supplier
+     * @return location
+     */
     public Location getLocation()
     {
-        // initialise instance variables
+        // return dari accessor 
         return location;
     }
-            
+    
+    /**
+     * Method of class Supplier
+     * @param id
+     */
     public void setId(int id)
     {
         // initialise instance variables
         this.id=id;
     }
     
+    /**
+     * Method of class Supplier
+     * @param name
+     */
     public void setName(String name)
     {
         // initialise instance variables
         this.name=name;
     }
     
+    /**
+     * Method of class Supplier
+     * @param email
+     */
     public void setEmail(String email)
     {
         // initialise instance variables
         this.email=email;
     }
     
+    /**
+     * Method of class Supplier
+     * @param phoneNumber
+     */
     public void setPhoneNumber(String phoneNumber)
     {
         // initialise instance variables
         this.phoneNumber=phoneNumber;
     }
     
+    /**
+     * Method of class Supplier
+     * @param location
+     */
     public void setLocation(Location location)
     {
         // initialise instance variables
         this.location=location;
     }
     
+    /**
+     * Method of class Supplier
+     * fungsi untuk print variable name
+     */
     public void printData (){
-        //
+        //print out variable name
         System.out.println(name);
     }
 }

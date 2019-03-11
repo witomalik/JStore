@@ -1,13 +1,13 @@
 
 /**
- * Write a description of class Location here.
+ * Merupakan Class Location.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Muhammad Wito Malik
+ * @version 28/02/2019
  */
 public class Location
 {
-    // instance variables - replace the example below with your own
+    // variabel yang digunakan dalam class
     private String city;
     private String province;
     private String description;
@@ -15,6 +15,9 @@ public class Location
 
     /**
      * Constructor for objects of class Location
+     * @param city 
+     * @param province
+     * @param description
      */
     public Location(String city, String province, String description)
     {
@@ -25,44 +28,72 @@ public class Location
         
     }
 
+    /**
+     * Method for objects of class Location
+     * @return province
+     */
     public String getProvince()
     {
-        // initialise instance variables
+        // return dari accessor 
         return province;
     }
     
+    /**
+     * Method for objects of class Location
+     * @return city
+     */
     public String getCity()
     {
-        // initialise instance variables
+        // return dari accessor 
         return city;
     }
     
+    /**
+     * Method for objects of class Location
+     * @return description
+     */
     public String getDesciption()
     {
-        // initialise instance variables
+        // return dari accessor 
         return description;
     }
     
+    /**
+     * Method for objects of class Location
+     * @param province
+     */
     public void setProvince(String province)
     {
         // initialise instance variables
         this.province=province;
     }
     
+    /**
+     * Method for objects of class Location
+     * @param city
+     */
     public void setCity(String city)
     {
         // initialise instance variables
         this.city=city;
     }
     
+    /**
+     * Method for objects of class Location
+     * @param description
+     */
     public void setDescription(String description)
     {
         // initialise instance variables
         this.description=description;
     }
     
-      public void printData(){
-       //
+    /**
+     * Method for objects of class Location
+     * fungsi untuk print variable name
+     */
+    public void printData(){
+       // return dari accessor 
        System.out.println(province);
     }
 }
