@@ -9,22 +9,27 @@ public class JStore
 {
     // instance variables - replace the example below with your own
     public static void main(String[] args){
-        Location kantorDepok = new Location("Depok", "Jawa Barat", "Dibawah Jaksel");
-        Supplier zeky = new Supplier(1,"Zeky", "zeky@gmail.com", "021345", kantorDepok);
-        Item chiki = new Item(1, "Chiki Zeky Kari Ayam", 50, 1500, "chiki", zeky);
-        Invoice belanja = new Invoice(1, chiki, "11 Maret 2019", 75000);
-        
-        zeky.printData();
-        zeky.setName("Nanda");
-        zeky.printData();
-        
-        chiki.printData();
-        
-        DatabaseSupplier.addSupplier(zeky);
-        DatabaseItem.addItem(chiki);
+        //
+        Location location1 = new Location("Depok", "Jawa Barat", "Kota Belimbing");
+        Supplier supplier1 = new Supplier(1, "Samsung", "samsung@gmail.com", "012345", location1);
+        location1.printData();
+        supplier1.printData();
+        System.out.println("==========Order New Item=======");
+        Transaction.orderNewItem(supplier1);
+        System.out.println("==========Order Second Item=======");
+        Transaction.orderSecondItem(supplier1);
+        System.out.println("==========Order Refurbished Item=======");
+        Transaction.orderRefurbishedItem(supplier1);
+        System.out.println("==========Item Paid=======");
+        Transaction.sellItemPaid(DatabaseItem.itemDB);
+        System.out.println("==========Item Unpaid=======");
+        Transaction.sellItemUnpaid(DatabaseItem.itemDB);
+        System.out.println("==========Item Installment=======");
+        Transaction.sellItemInstallment(DatabaseItem.itemDB);
     }
     
     public void JStore(){
+        //
     }
 
 }

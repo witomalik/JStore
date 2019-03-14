@@ -12,6 +12,8 @@ public class Invoice
     private Item item;
     private String date;
     private int totalPrice;
+    private int totalItem;
+    private InvoiceStatus status;
     
 
     /**
@@ -21,13 +23,15 @@ public class Invoice
      * @param date
      * @param totalPrice
      */
-    public Invoice(int id, Item item, String date, int totalPrice)
+    public Invoice(int id, Item item, String date, int totalPrice, int totalItem, InvoiceStatus status)
     {
         // initialise instance variables
         this.id=id;
         this.item=item;
         this.date=date;
         this.totalPrice=totalPrice;
+        this.totalItem=totalItem;
+        this.status=status;
     }
     
     /**
@@ -72,6 +76,26 @@ public class Invoice
     
     /**
      * Method of class Invoice
+     * @return totalPrice
+     */
+    public int getTotalItem()
+    {
+        // return dari accessor 
+        return totalItem;
+    }
+    
+    /**
+     * Method of class Invoice
+     * @return totalPrice
+     */
+    public InvoiceStatus getInvoiceStatus()
+    {
+        // return dari accessor 
+        return status;
+    }
+    
+    /**
+     * Method of class Invoice
      * @param id
      */
     public void setId(int id)
@@ -112,10 +136,36 @@ public class Invoice
     
     /**
      * Method of class Invoice
+     * @param totalPrice
+     */
+    public void setTotalItem(int totalItem)
+    {
+        // initialise instance variables
+        this.totalItem=totalItem;
+    }
+    
+    /**
+     * Method of class Invoice
+     * @param totalPrice
+     */
+    public void setInvoiceStatus(InvoiceStatus status)
+    {
+        // initialise instance variables
+        this.status=status;
+    }
+    
+    /**
+     * Method of class Invoice
      * fungsi untuk print variable totalPrice
      */
     public void printData(){
         //print out variable totalPrice
-        System.out.println(totalPrice);
+        System.out.println("==========INVOICE=======");
+        System.out.println("ID :" + id);
+        System.out.println("Date :" + date);
+        System.out.println("Item yang terdapat :" + item.getName());
+        System.out.println("Total Item :" + totalItem);
+        System.out.println("Total harga :" + totalPrice);
+        System.out.println("Status :" + status);
     }
 }

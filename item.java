@@ -13,8 +13,10 @@ public class Item
     private String name;
     private int stock;
     private int price;
-    private String category;
+    private ItemCategory category;
+    private ItemStatus status;
     private Supplier supplier;
+    
 
     /**
      * Constructor for objects of class Item
@@ -23,14 +25,16 @@ public class Item
      * @param stock
      * @param price
      * @param category
+     * @param status
      * @param supplier
      */
-    public Item(int id, String name, int stock, int price, String category, Supplier supplier)
+    public Item(int id, String name, int stock, ItemStatus status, int price, Supplier supplier, ItemCategory category)
     {
         // initialise instance variables
         this.id=id;
         this.name=name;
         this.stock=stock;
+        this.status=status;
         this.price=price;
         this.category=category;
         this.supplier=supplier;
@@ -80,10 +84,16 @@ public class Item
      * Method of class Item
      * @return category
      */
-    public String getCategory()
+    public ItemCategory getCategory()
     {
         // return dari accessor 
         return category;
+    }
+    
+    public ItemStatus getStatus()
+    {
+        // return dari accessor 
+        return status;
     }
     
     /**
@@ -140,10 +150,20 @@ public class Item
      * Method of class Item
      * @param category
      */
-    public void setCategory(String category)
+    public void setCategory(ItemCategory category)
     {
         // initialise instance variables
         this.category=category;
+    }
+    
+    /**
+     * Method of class Item
+     * @param category
+     */
+    public void setStatus(ItemStatus status)
+    {
+        // initialise instance variables
+        this.status=status;
     }
     
     /**
@@ -162,7 +182,13 @@ public class Item
      */
     public void printData(){
         //print out variable name
-        System.out.println(name);
+        System.out.println("==========ITEM=======");
+        System.out.println("ID :" + id);
+        System.out.println("Name :"  + name );
+        System.out.println("Stok :" + stock);
+        System.out.println("Kategori :" + category);
+        System.out.println("Status :" + status);
+        System.out.println("Supplier :" + supplier.getName());
     }
     
     
