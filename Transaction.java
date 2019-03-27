@@ -14,48 +14,45 @@ public class Transaction
      * Method of class Transaction
      * @return void
      */
-    public static void orderNewItem(Supplier supplier)
+    public static void orderNewItem(Item item)
     {
         // 
-        Item item1 = new Item (1, "Galaxy Spica", 50, ItemStatus.New, 250000, supplier, ItemCategory.Electronics);
-        DatabaseItem.addItem(item1);
-        Invoice pesan1 = new Invoice(1, item1, "14 Maret 2019", item1.getPrice(), 5, InvoiceStatus.Unpaid);
-        item1.setStatus(ItemStatus.New);
-        pesan1.setInvoiceStatus(InvoiceStatus.Unpaid);
-        item1.printData();
-        pesan1.printData();
+        Invoice buyPaid1 = new Buy_Paid(1, item, "27 Maret 2019", 250000, item.getPrice());
+        if (buyPaid1 instanceof Sell_Paid){
+            System.out.println("Benar, Invoice Type adalah Sell_Paid");
+        }else{
+            System.out.println("Salah, Invoice Type bukan Sell _Paid");
+        }
     }
     
     /**
      * Method of class Transaction
      * @return void
      */
-    public static void orderSecondItem(Supplier supplier)
+    public static void orderSecondItem(Item item)
     {
         // return dari accessor 
-        Item item2 = new Item (1, "Galaxy Spicb", 50, ItemStatus.Second, 250000, supplier, ItemCategory.Electronics);
-        DatabaseItem.addItem(item2);
-        Invoice pesan2 = new Invoice(2, item2, "14 Maret 2019", item2.getPrice(), 5, InvoiceStatus.Unpaid);
-        item2.setStatus(ItemStatus.Second);
-        pesan2.setInvoiceStatus(InvoiceStatus.Unpaid);
-        item2.printData();
-        pesan2.printData();
+        Invoice buyPaid1 = new Buy_Paid(1, item, "27 Maret 2019", 250000, item.getPrice());
+        if (buyPaid1 instanceof Sell_Paid){
+            System.out.println("Benar, Invoice Type adalah Sell_Paid");
+        }else{
+            System.out.println("Salah, Invoice Type bukan Sell _Paid");
+        }
     }
     
     /**
      * Method of class Transaction
      * @return void
      */
-    public static void orderRefurbishedItem(Supplier supplier)
+    public static void orderRefurbishedItem(Item item)
     {
         // return dari accessor 
-        Item item3 = new Item (1, "Galaxy Spicc", 50, ItemStatus.Refurbished, 250000, supplier, ItemCategory.Electronics);
-        DatabaseItem.addItem(item3);
-        Invoice pesan3 = new Invoice(3, item3, "14 Maret 2019", item3.getPrice(), 5, InvoiceStatus.Unpaid);
-        item3.setStatus(ItemStatus.Refurbished);
-        pesan3.setInvoiceStatus(InvoiceStatus.Unpaid);
-        item3.printData();
-        pesan3.printData();
+        Invoice buyPaid1 = new Buy_Paid(1, item, "27 Maret 2019", 250000, item.getPrice());
+        if (buyPaid1 instanceof Sell_Paid){
+            System.out.println("Benar, Invoice Type adalah Sell_Paid");
+        }else{
+            System.out.println("Salah, Invoice Type bukan Sell_Paid");
+        }
     }
     
     /**
@@ -65,13 +62,10 @@ public class Transaction
     public static void sellItemPaid(Item item)
     {
         // return dari accessor 
-        Invoice pesan4 = new Invoice(4, item, "14 Maret 2019", item.getPrice(), 5, InvoiceStatus.Paid);
-        pesan4.setInvoiceStatus(InvoiceStatus.Paid);
-        item.setStatus(ItemStatus.Sold);
+        Invoice sellPaid1 = new Sell_Paid(1, item, "27 Maret 2019", 250000, item.getPrice());
+        sellPaid1.printData();
         item.printData();
-        pesan4.printData();
     }
-    
     /**
      * Method of class Transaction
      * @return void
@@ -79,11 +73,9 @@ public class Transaction
     public static void sellItemUnpaid(Item item)
     {
         // return dari accessor 
-        Invoice pesan5 = new Invoice(5, item, "14 Maret 2019", item.getPrice(), 5, InvoiceStatus.Unpaid);
-        pesan5.setInvoiceStatus(InvoiceStatus.Unpaid);
-        item.setStatus(ItemStatus.Sold);
+        Invoice sellUnpaid1 = new Sell_Unpaid(1, item, "27 Maret 2019", 250000, item.getPrice(), "30 Desember 2019");
+        sellUnpaid1.printData();
         item.printData();
-        pesan5.printData();
     }
     
     /**
@@ -93,10 +85,10 @@ public class Transaction
     public static void sellItemInstallment(Item item)
     {
         // return dari accessor 
-        Invoice pesan6 = new Invoice(6, item, "14 Maret 2019", item.getPrice(), 5, InvoiceStatus.Installment);
-        pesan6.setInvoiceStatus(InvoiceStatus.Installment);
-        item.setStatus(ItemStatus.Sold);
+        Invoice sellInstallment1 = new Sell_Installment(1, item, "27 Maret 2019", 250000, item.getPrice(), 24);
+        ((Sell_Installment) sellInstallment1).setInstallmentPrice();
+        ((Sell_Installment) sellInstallment1).setTotalPrice();
+        sellInstallment1.printData();
         item.printData();
-        pesan6.printData();
     }
 }

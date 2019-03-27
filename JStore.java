@@ -1,4 +1,3 @@
-
 /**
  * Write a description of class JStore here.
  *
@@ -11,21 +10,19 @@ public class JStore
     public static void main(String[] args){
         //
         Location location1 = new Location("Depok", "Jawa Barat", "Kota Belimbing");
-        Supplier supplier1 = new Supplier(1, "Samsung", "samsung@gmail.com", "012345", location1);
-        location1.printData();
-        supplier1.printData();
-        System.out.println("==========Order New Item=======");
-        Transaction.orderNewItem(supplier1);
-        System.out.println("==========Order Second Item=======");
-        Transaction.orderSecondItem(supplier1);
-        System.out.println("==========Order Refurbished Item=======");
-        Transaction.orderRefurbishedItem(supplier1);
-        System.out.println("==========Item Paid=======");
-        Transaction.sellItemPaid(DatabaseItem.itemDB);
-        System.out.println("==========Item Unpaid=======");
-        Transaction.sellItemUnpaid(DatabaseItem.itemDB);
-        System.out.println("==========Item Installment=======");
-        Transaction.sellItemInstallment(DatabaseItem.itemDB);
+        Supplier supplier1 = new Supplier(1, "Wito", "wito@gmail.com", "012345", location1);
+        Item item1 = new Item(1, "HandPhone", 500000, ItemStatus.New, 100000, supplier1, ItemCategory.Electronics);
+        DatabaseItem.addItem(item1);
+
+        Transaction.orderNewItem(item1);
+        System.out.println("\n Sell Item Paid");
+        Transaction.sellItemPaid(item1);
+        System.out.println("\n Sell Item Unpaid");
+        Transaction.sellItemUnpaid(item1);
+        System.out.println("\n Sell Item Installment");
+        Transaction.sellItemInstallment(item1);
+        
+        
     }
     
     public void JStore(){

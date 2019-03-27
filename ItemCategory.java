@@ -5,24 +5,21 @@
  * @author (your name here)
  * @version (version number or date here)
  */
+
 public enum ItemCategory {
 
-    Electronics {
-        public String toString() {
-            return "Electronics";
-        }
-    }
-    ,
-    Furniture {
-        public String toString() {
-            return "Furniture";
-        }
-    }
-    ,
-    Stationery {
-        public String toString() {
-            return "Stationery";
-        }
-    }
-
-}
+    Electronics ("Electronics"),
+    Furniture ("Furniture"),
+    Stationery ("Stationery");
+ 
+    private String cat;
+     
+     ItemCategory(String cat){
+         this.cat=cat;
+     }
+     
+     public String toString(){
+         return cat;
+     }
+ 
+ }

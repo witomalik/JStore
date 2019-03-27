@@ -2,32 +2,24 @@
 /**
  * Enumeration class ItemStatus 
  *
- * @author GemmaRetalAnanda
+ * @author 
  * @version 1.3
  */
 public enum ItemStatus {
 
-    New {
-        public String toString() {
-            return "New";
-        }
-    }
-    ,
-    Second {
-        public String toString() {
-            return "Second";
-        }
-    }
-    ,
-    Refurbished {
-        public String toString() {
-            return "Refurbished";
-        }
-    }
-    ,
-    Sold {
-        public String toString() {
-            return "Sold";
-        }
-    }
-}
+    New ("New"),
+    Second ("Second"),
+    Refurbished ("Refurbished"),
+    Sold ("Sold");
+ 
+    private String status;
+     
+     ItemStatus(String status){
+         this.status=status;
+     }
+     
+     public String toString(){
+         return status;
+     }
+ 
+ }

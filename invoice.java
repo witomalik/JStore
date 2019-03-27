@@ -5,16 +5,16 @@
  * @author Muhammad Wito Malik
  * @version 28/02/2019
  */
-public class Invoice
+public abstract class Invoice
 {
     // variabel yang digunakan dalam class
     private int id;
     private Item item;
     private String date;
-    private int totalPrice;
+    protected int totalPrice;
     private int totalItem;
     private InvoiceStatus status;
-    
+    private InvoiceType type;
 
     /**
      * Constructor for objects of class Invoice
@@ -23,7 +23,7 @@ public class Invoice
      * @param date
      * @param totalPrice
      */
-    public Invoice(int id, Item item, String date, int totalPrice, int totalItem, InvoiceStatus status)
+    public Invoice(int id, Item item, String date, int totalItem, int totalPrice)
     {
         // initialise instance variables
         this.id=id;
@@ -31,9 +31,7 @@ public class Invoice
         this.date=date;
         this.totalPrice=totalPrice;
         this.totalItem=totalItem;
-        this.status=status;
-    }
-    
+    } 
     /**
      * Method of class Invoice
      * @return id
@@ -88,11 +86,9 @@ public class Invoice
      * Method of class Invoice
      * @return totalPrice
      */
-    public InvoiceStatus getInvoiceStatus()
-    {
-        // return dari accessor 
-        return status;
-    }
+    public abstract InvoiceStatus getInvoiceStatus();
+
+    public abstract InvoiceType getInvoiceType();
     
     /**
      * Method of class Invoice
@@ -158,14 +154,5 @@ public class Invoice
      * Method of class Invoice
      * fungsi untuk print variable totalPrice
      */
-    public void printData(){
-        //print out variable totalPrice
-        System.out.println("==========INVOICE=======");
-        System.out.println("ID :" + id);
-        System.out.println("Date :" + date);
-        System.out.println("Item yang terdapat :" + item.getName());
-        System.out.println("Total Item :" + totalItem);
-        System.out.println("Total harga :" + totalPrice);
-        System.out.println("Status :" + status);
-    }
+    public abstract void printData();
 }

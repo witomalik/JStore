@@ -9,7 +9,7 @@ public class DatabaseItem
 {
     // variabel yang digunakan dalam class
     private String[] listItem;
-    public static Item itemDB;
+    //public static Item itemDB;
     
     /**
      * Method of class DatabaseItem
@@ -18,7 +18,7 @@ public class DatabaseItem
     public static boolean addItem(Item item)
     {
         // return dari accessor 
-        itemDB=item;
+        //itemDB=item;
         return true;
     }
     
@@ -36,11 +36,11 @@ public class DatabaseItem
      * Method of class DatabaseItem
      * @return item
      */
-    public Item getItem()
-    {
+    //public Item getItem()
+    //{
         // return dari accessor 
-        return itemDB;
-    }
+        //return itemDB;
+    //}
     
     /**
      * Method of class DatabaseItem
