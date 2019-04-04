@@ -7,7 +7,7 @@
  * @version 28/02/2019
  */
 public class Item
-{
+{ 
     // variabel yang digunakan dalam class
     private int id;
     private String name;
@@ -180,15 +180,9 @@ public class Item
      * Method of class Item
      * fungsi untuk print variable name
      */
-    public void printData(){
-        //print out variable name
-        System.out.println("==========ITEM=======");
-        System.out.println("ID :" + id);
-        System.out.println("Name :"  + name );
-        System.out.println("Stok :" + stock);
-        System.out.println("Kategori :" + category);
-        System.out.println("Status :" + status);
-        System.out.println("Supplier :" + supplier.getName());
+
+    public String toString(){
+        return "======ITEM=======\nId: "+id+"\nName: "+name+"\nStock: "+stock+"\nCategory: "+category+"\nStatus: "+status+"\nSupplier: "+supplier.getName();
     }
     
     

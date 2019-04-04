@@ -1,3 +1,4 @@
+import java.util.*;
 
 /**
  * Merupakan Class Invoice.
@@ -10,11 +11,11 @@ public abstract class Invoice
     // variabel yang digunakan dalam class
     private int id;
     private Item item;
-    private String date;
-    protected int totalPrice;
+    private Calendar date;
+    private int totalPrice;
     private int totalItem;
-    private InvoiceStatus status;
-    private InvoiceType type;
+    //private InvoiceStatus status;
+    //private InvoiceType type;
 
     /**
      * Constructor for objects of class Invoice
@@ -23,14 +24,12 @@ public abstract class Invoice
      * @param date
      * @param totalPrice
      */
-    public Invoice(int id, Item item, String date, int totalItem, int totalPrice)
+    public Invoice(int id, Item item, int totalItem)
     {
         // initialise instance variables
         this.id=id;
         this.item=item;
-        this.date=date;
-        this.totalPrice=totalPrice;
-        this.totalItem=totalItem;
+        this.totalItem=item.getPrice() * totalItem;
     } 
     /**
      * Method of class Invoice
@@ -56,7 +55,7 @@ public abstract class Invoice
      * Method of class Invoice
      * @return date
      */
-    public String getDate()
+    public Calendar getDate()
     {
         // return dari accessor 
         return date;
@@ -104,7 +103,7 @@ public abstract class Invoice
      * Method of class Invoice
      * @param item
      */
-    public void setIdItem(int idItem)
+    public void setItem(Item item)
     {
         // initialise instance variables
         this.item=item;
@@ -114,7 +113,7 @@ public abstract class Invoice
      * Method of class Invoice
      * @param date
      */
-    public void setDate(String date)
+    public void setDate(Calendar date)
     {
         // initialise instance variables
         this.date=date;
@@ -127,7 +126,7 @@ public abstract class Invoice
     public void setTotalPrice(int totalPrice)
     {
         // initialise instance variables
-        this.totalPrice=totalPrice;
+        this.totalPrice = item.getPrice() * totalItem;
     }
     
     /**
@@ -144,15 +143,18 @@ public abstract class Invoice
      * Method of class Invoice
      * @param totalPrice
      */
-    public void setInvoiceStatus(InvoiceStatus status)
-    {
-        // initialise instance variables
-        this.status=status;
-    }
+
+    public abstract InvoiceStatus setInvoiceStatus(InvoiceStatus status);
     
     /**
      * Method of class Invoice
      * fungsi untuk print variable totalPrice
      */
-    public abstract void printData();
+    public String toString() {
+        return "===== Invoice =====" + "ID: " + this.getId() + "Item: " + this.getItem().getName() + "Amount:"
+                + this.getTotalItem() + "Buy Date: " + this.getDate() + "Price: " + this.getItem().getPrice()
+                + "Price total: " + this.getTotalPrice() + "Supplier ID: " + this.getItem().getSupplier().getId()
+                + "Supplier name: " + this.getItem().getSupplier().getName() + "status: " + this.INVOICE_STATUS
+                + "Buy success";
+    }
 }

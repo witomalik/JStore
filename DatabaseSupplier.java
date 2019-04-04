@@ -8,7 +8,7 @@
 public class DatabaseSupplier
 {
     // variabel yang digunakan dalam class
-    private String[] listSupplier; // inisialisasi variabel
+    private Invoice[] listSupplier; // inisialisasi variabel
     private Supplier supplier; // inisialisasi variabel
     
     /**
@@ -45,7 +45,7 @@ public class DatabaseSupplier
      * Method of class DatabaseSupplier
      * @return listSupplier
      */
-    public String[] getListSupplier(){
+    public Invoice[] getListSupplier(){
         // return dari accessor 
         return listSupplier;
     }

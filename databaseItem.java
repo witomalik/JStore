@@ -8,7 +8,7 @@
 public class DatabaseItem
 {
     // variabel yang digunakan dalam class
-    private String[] listItem;
+    private Invoice[] listItem;
     //public static Item itemDB;
     
     /**
@@ -46,7 +46,7 @@ public class DatabaseItem
      * Method of class DatabaseItem
      * @return listItem
      */
-    public String[] getItemDatabase(){
+    public Invoice[] getItemDatabase(){
         // return dari accessor 
         return listItem;
     }

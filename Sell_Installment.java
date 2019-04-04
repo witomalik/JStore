@@ -11,6 +11,8 @@ public class Sell_Installment extends Invoice
     private static final InvoiceStatus INVOICE_STATUS=InvoiceStatus.Installment;
     private int installmentPeriod;
     private int installmentPrice;
+    private Customer customer;
+
     
     /**
      * Constructor for objects of class Sell_Installment
@@ -19,11 +21,12 @@ public class Sell_Installment extends Invoice
      * @param date
      * @param totalPrice
      */
-    public Sell_Installment(int id, Item item, String date, int totalItem, int totalPrice, int installmentPeriod)
+    public Sell_Installment(int id, Item item, int totalItem, int installmentPeriod, Customer customer)
     {
         // initialise instance variables
-        super(id, item, date, totalItem, totalPrice);
+        super(id, item, totalItem);
         this.installmentPeriod=installmentPeriod;
+        this.customer=customer;
     } 
     /**
      * Method of class Sell_Installment
@@ -42,6 +45,15 @@ public class Sell_Installment extends Invoice
     {
         // return dari accessor 
         return installmentPrice;
+    }
+    /**
+     * Method of class Sell_Installment
+     * @return id
+     */
+    public Customer getCustomer()
+    {
+        // return dari accessor 
+        return customer;
     }
     /**
      * Method of class Sell_Installment
@@ -82,6 +94,12 @@ public class Sell_Installment extends Invoice
         double result;
         result = (installmentPrice*installmentPeriod); 
         this.totalPrice=(int)result;
+    }
+
+    public void setCustomer(Customer customer)
+    {
+        // initialise instance variables
+        this.customer=customer;
     }
     /**
      * Method of class Invoice

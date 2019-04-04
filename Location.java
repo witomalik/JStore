@@ -92,11 +92,8 @@ public class Location
      * Method for objects of class Location
      * fungsi untuk print variable name
      */
-    public void printData(){
-       // return dari accessor 
-       System.out.println("==========LOCATION=======");
-        System.out.println("Provinsi :" + province);
-        System.out.println("Kota :" + city);
-        System.out.println("Deksripsi :" + description);
+    public String toString(){
+        return "Kota :" + city + "Provinsi :" + province + "Deskripsi :" + description;
     }
+    
 }

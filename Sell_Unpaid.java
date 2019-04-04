@@ -1,3 +1,5 @@
+import java.util.Calendar;
+
 /**
  * Merupakan Class Sell_Unpaid.
  *
@@ -9,7 +11,9 @@ public class Sell_Unpaid extends Invoice
     // variabel yang digunakan dalam class
     private static final InvoiceType INVOICE_TYPE=InvoiceType.Sell;
     private static final InvoiceStatus INVOICE_STATUS=InvoiceStatus.Unpaid;
-    private String dueDate;
+    private Calendar dueDate;
+    private Customer customer;
+
     
     /**
      * Constructor for objects of class Sell_Unpaid
@@ -18,10 +22,11 @@ public class Sell_Unpaid extends Invoice
      * @param date
      * @param totalPrice
      */
-    public Sell_Unpaid(int id, Item item, String date, int totalItem, int totalPrice, String dueDate)
+    public Sell_Unpaid(int id, Item item, int totalItem, Customer customer)
     {
         // initialise instance variables
-        super(id, item, date, totalItem, totalPrice);
+        super(id, item, totalItem);
+        this.customer=customer;
         this.dueDate=dueDate;
     } 
     /**
@@ -46,11 +51,34 @@ public class Sell_Unpaid extends Invoice
      * Method of class Sell_Unpaid
      * @return id
      */
-    public String getDueDate()
+    public Customer getCustomer()
+    {
+        // return dari accessor 
+        return customer;
+    }
+
+    public Calendar getDueDate()
     {
         // return dari accessor 
         return dueDate;
     }
+
+    public void setCustomer(Customer customer)
+    {
+        // initialise instance variables
+        this.customer=customer;
+    }
+
+    public void setDueDate(Calendar dueDate)
+    {
+        // initialise instance variables
+        this.dueDate=dueDate;
+    }
+    
+    public void setInvoiceStatus(InvoiceStatus status){
+    }
+   
+    
     /**
      * Method of class Sell_Unpaid
      * fungsi untuk print variable 

@@ -136,13 +136,8 @@ public class Supplier
      * Method of class Supplier
      * fungsi untuk print variable name
      */
-    public void printData (){
-        //print out variable name
-        System.out.println("==========SUPPLIER=======");
-        System.out.println("ID :" + id);
-        System.out.println("Name :" + name);
-        System.out.println("Email :" + email);
-        System.out.println("No telpon :" + phoneNumber);
-        System.out.println("Lokasi Supplier :" + location.getCity());
+    public String toString(){
+        return "ID :" + id + "Name :" + name + "Email :" + email + "No telpon :" + phoneNumber + "Lokasi Supplier :" + location.getCity();
     }
+    
 }
