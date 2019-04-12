@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 /**
  * Merupakan Class DatabaseSupplier.
@@ -8,45 +9,53 @@
 public class DatabaseSupplier
 {
     // variabel yang digunakan dalam class
-    private Invoice[] listSupplier; // inisialisasi variabel
-    private Supplier supplier; // inisialisasi variabel
-    
-    /**
-     * Method of class DatabaseSupplier
-     * @return true
-     */
-    public static boolean addSupplier(Supplier supplier)
-    {
-        // return dari accessor 
+    private static ArrayList<Supplier> SUPPLIER_DATABASE = new ArrayList<Supplier>();
+    private static int LAST_SUPPLIER_ID = 0;
+
+    public static ArrayList<Supplier> getSupplierDatabase(){
+        return SUPPLIER_DATABASE;
+    }
+
+    public static int getLastSupplierID(){
+        return LAST_SUPPLIER_ID;
+    }
+
+    public static boolean addSupplier(Supplier supplier) {
+        String email = supplier.getEmail();
+        String name = supplier.getName();
+        String phoneNumber = supplier.getPhoneNumber();
+        for (Supplier supplier1 : SUPPLIER_DATABASE) {
+            if (name == supplier.getName()) {
+                return false;
+            }
+            if (email == supplier.getEmail()) {
+                return false;
+            }
+            if (phoneNumber == supplier.getPhoneNumber()) {
+                return false;
+            }
+        }
+        SUPPLIER_DATABASE.add(supplier);
+        LAST_SUPPLIER_ID = supplier.getId();
         return true;
     }
-    
-    /**
-     * Method of class DatabaseSupplier
-     * @param supplier
-     */
-    public void removeSupplier(Supplier supplier)
-    {
-        // initialise instance variables
-        this.supplier=supplier;
+
+    public Supplier getSupplier(int id) {
+        for (Supplier supplier : SUPPLIER_DATABASE) {
+            if (supplier.getId() == id) {
+                return supplier;
+            }
+        }
+        return null;
     }
-    
-    /**
-     * Method of class DatabaseSupplier
-     * @return supplier
-     */
-    public Supplier getSupplier()
-    {
-        // return dari accessor 
-        return supplier;
+
+    public boolean removeSupplier(int id) {
+        for (Supplier supplier : SUPPLIER_DATABASE) {
+            if (supplier.getId() == id) {
+                return true;
+            }
+        }
+        return false;
     }
-    
-    /**
-     * Method of class DatabaseSupplier
-     * @return listSupplier
-     */
-    public Invoice[] getListSupplier(){
-        // return dari accessor 
-        return listSupplier;
-    }
+
 }

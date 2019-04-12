@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 /**
  * Merupakan Class DatabaseItem.
@@ -8,47 +9,86 @@
 public class DatabaseItem
 {
     // variabel yang digunakan dalam class
-    private Invoice[] listItem;
+    private static ArrayList<Item> ITEM_DATABASE = new ArrayList<Item>();
+    private static int LAST_ITEM_ID=0;
     //public static Item itemDB;
-    
-    /**
-     * Method of class DatabaseItem
-     * @return true
-     */
+
+    public static ArrayList<Item> getItemDatabase(){
+        return ITEM_DATABASE;
+    }
+
+    public static int getLastItemID(){
+        return LAST_ITEM_ID;
+    }
+
     public static boolean addItem(Item item)
     {
-        // return dari accessor 
-        //itemDB=item;
+        ITEM_DATABASE.add(item);
         return true;
     }
-    
-    /**
-     * Method of class DatabaseItem
-     * @return true
-     */
-    public static boolean removeItem(Item itemDB)
-    {
-        // return dari accessor 
-        return true;
+
+    public static Item getItemFormID(int id){
+        for (Item item : ITEM_DATABASE) {
+            if (id == item.getId()) {
+                return item;
+            }
+        }
+        return null;
     }
-    
-    /**
-     * Method of class DatabaseItem
-     * @return item
-     */
-    //public Item getItem()
-    //{
-        // return dari accessor 
-        //return itemDB;
-    //}
-    
-    /**
-     * Method of class DatabaseItem
-     * @return listItem
-     */
-    public Invoice[] getItemDatabase(){
-        // return dari accessor 
-        return listItem;
+
+    public static ArrayList<Item> getItemFormSupplier(Supplier supplier) {
+        ArrayList<Item> temp = new ArrayList<>();
+        for (Item item : ITEM_DATABASE) {
+            if (supplier.equals(item.getSupplier())) {
+                temp.add(item);
+            }
+        }
+        if(temp.size()>0){
+            return temp;
+        }
+        else {
+            return null;
+        }
     }
-    
+
+    public static ArrayList<Item> getItemFormCategory(ItemCategory category) {
+        ArrayList<Item> temp = new ArrayList<>();
+        for (Item item : ITEM_DATABASE) {
+            if (category.equals(item.getSupplier())) {
+                temp.add(item);
+            }
+        }
+        if(temp.size()>0){
+            return temp;
+        }
+        else {
+            return null;
+        }
+    }
+
+    public static ArrayList<Item> getItemFormStatus(ItemStatus status) {
+        ArrayList<Item> temp = new ArrayList<>();
+        for (Item item : ITEM_DATABASE) {
+            if (status.equals(item.getSupplier())) {
+                temp.add(item);
+            }
+        }
+        if(temp.size()>0){
+            return temp;
+        }
+        else {
+            return null;
+        }
+    }
+
+    public static boolean removeItem(int id){
+        for (Item item : ITEM_DATABASE) {
+            if (id == item.getId()) {
+                ITEM_DATABASE.remove(item);
+                return true;
+            }
+        }
+        return false;
+    }
+
 }

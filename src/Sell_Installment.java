@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 /**
  * Merupakan Class Sell_Installment.
  *
@@ -12,22 +14,12 @@ public class Sell_Installment extends Invoice
     private int installmentPeriod;
     private int installmentPrice;
     private Customer customer;
+    private boolean isActive;
 
-    /**
-     * Constructor for objects of class Sell_Installment
-     * @param id
-     * @param item
-     * @param date
-     * @param totalPrice
-     */
-    
-
-    /**
-     * Constructor for objects of class Buy_Paid
-     */
-    public Sell_Installment(int id, Item item, int totalItem, int installmentPeriod, Customer customer)
+    public Sell_Installment(ArrayList<Integer> item, int installmentPeriod, Customer customer)
     {
-        super(id, item,totalItem);
+        super (item);
+        this.isActive=true;
         this.installmentPeriod=installmentPeriod;
         this.customer=customer;
     }
@@ -76,19 +68,17 @@ public class Sell_Installment extends Invoice
         this.customer=customer;
     }
     
-    public String toString()
-    {
-        return "===== INVOICE =====" + 
-            "ID: "+this.getId() + 
-            "Item: "+this.getItem().getName() + 
-            "Amount:" +this.getTotalItem()+ 
-            "Buy Date: "+this.getDate().getTime() + 
-            "Price: " + this.getItem().getPrice()+ 
-            "Price total: " +this.getTotalPrice() + 
-            "Supplier ID: " +this.getItem().getSupplier().getId()+ 
-            "Supplier name: " +this.getItem().getSupplier().getName()+ 
-            "Customer ID: " +this.getCustomer().getId()+ 
-            "Customer name: " +this.getCustomer().getName()+
-            "status: "+this.INVOICE_STATUS +"Sell success"; 
+    public String toString() {
+        StringBuilder total = new StringBuilder();
+        for (int a : item) {
+            Item temp = DatabaseItem.getItemFormID(a);
+            String stringTemp = null;
+            if (temp != null) {
+                stringTemp = temp.toString();
+                total.append(stringTemp);
+            }
+            total.append("\n");
+        }
+        return total.toString();
     }
 }

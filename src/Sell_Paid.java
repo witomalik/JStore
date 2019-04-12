@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 /**
  * Merupakan Class Sell_Paid.
  *
@@ -10,20 +12,13 @@ public class Sell_Paid extends Invoice
     private static final InvoiceType INVOICE_TYPE=InvoiceType.Sell;
     private static final InvoiceStatus INVOICE_STATUS=InvoiceStatus.Paid;
     private Customer customer;
+    private boolean isActive;
 
-    
-    /**
-     * Constructor for objects of class Sell_Paid
-     * @param id
-     * @param item
-     * @param date
-     * @param totalPrice
-     */
-    public Sell_Paid(int id, Item item,int totalItem, Customer customer)
+    public Sell_Paid( ArrayList<Integer> item, Customer customer)
     {
-        super(id, item, totalItem);
+        super (item);
+        this.isActive=false;
         this.customer=customer;
-
     }
 
     public Customer getCustomer()
@@ -41,19 +36,17 @@ public class Sell_Paid extends Invoice
         return INVOICE_TYPE;
     }
 
-    public String toString()
-    {
-        return "===== INVOICE =====" + 
-            "ID: "+this.getId() + 
-            "Item: "+this.getItem().getName() + 
-            "Amount:" +this.getTotalItem()+ 
-            "Buy Date: "+this.getDate().getTime() + 
-            "Price: " + this.getItem().getPrice()+ 
-            "Price total: " +this.getTotalPrice() + 
-            "Supplier ID: " +this.getItem().getSupplier().getId()+ 
-            "Supplier name: " +this.getItem().getSupplier().getName()+ 
-            "Customer ID: " +this.getCustomer().getId()+ 
-            "Customer name: " +this.getCustomer().getName()+
-            "status: "+this.INVOICE_STATUS +"Sell success"; 
+    public String toString() {
+        StringBuilder total = new StringBuilder();
+        for(int a : item){
+            Item temp = DatabaseItem.getItemFormID(a);
+            String stringTemp = null;
+            if (temp != null) {
+                stringTemp = temp.toString();
+                total.append(stringTemp);
+            }
+            total.append("\n");
+        }
+        return total.toString();
     }
 }
