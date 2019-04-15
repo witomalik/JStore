@@ -1,4 +1,4 @@
-
+import java.util.ArrayList;
 
 /**
  * Merupakan Class Item.
@@ -23,10 +23,10 @@ public class Item
      * @param id
      * @param name
      * @param stock
-     * @param price
-     * @param category
      * @param status
+     * @param price
      * @param supplier
+     * @param category
      */
     public Item(int id, String name, int stock, ItemStatus status, int price, Supplier supplier, ItemCategory category)
     {
@@ -182,7 +182,7 @@ public class Item
      */
 
     public String toString(){
-        return "======ITEM=======\nId: "+id+"\nName: "+name+"\nStock: "+stock+"\nCategory: "+category+"\nStatus: "+status+"\nSupplier: "+supplier.getName();
+        return "\n Id: "+id+"\n Name: "+name+"\n Stock: "+stock+"\n Category: "+category+"\n Status: "+status+"\n Supplier: "+supplier.getName();
     }
     
     

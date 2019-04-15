@@ -25,13 +25,7 @@ public class DatabaseSupplier
         String name = supplier.getName();
         String phoneNumber = supplier.getPhoneNumber();
         for (Supplier supplier1 : SUPPLIER_DATABASE) {
-            if (name == supplier.getName()) {
-                return false;
-            }
-            if (email == supplier.getEmail()) {
-                return false;
-            }
-            if (phoneNumber == supplier.getPhoneNumber()) {
+            if ((supplier.getName().equals(supplier1.getName())) && (supplier.getEmail().equals(supplier1.getEmail())) && (supplier.getPhoneNumber().equals(supplier1.getPhoneNumber()))) {
                 return false;
             }
         }
@@ -40,7 +34,7 @@ public class DatabaseSupplier
         return true;
     }
 
-    public Supplier getSupplier(int id) {
+    public static Supplier getSupplier(int id) {
         for (Supplier supplier : SUPPLIER_DATABASE) {
             if (supplier.getId() == id) {
                 return supplier;
@@ -49,7 +43,7 @@ public class DatabaseSupplier
         return null;
     }
 
-    public boolean removeSupplier(int id) {
+    public static boolean removeSupplier(int id) {
         for (Supplier supplier : SUPPLIER_DATABASE) {
             if (supplier.getId() == id) {
                 return true;

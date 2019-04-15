@@ -213,7 +213,7 @@ public class Customer
      */
     public String toString(){
         //
-        return "Id: "+id+"\nNama: "+name+"\nUsername: "+username+"\nEmail: "+email+"\nPassword: "+password;
+        return "\n Id: "+id+"\n Nama: "+name+"\n Username: "+username+"\n Email: "+email+"\n Password: "+password;
     }
     
     

@@ -15,16 +15,17 @@ public class DatabaseCustomer {
     public static boolean addCustomer(Customer customer)
     {
         for (Customer customer1 : CUSTOMER_DATABASE){
-            if (customer1.getName()!=customer.getName()&&customer1.getName()!=customer.getEmail()){
-                CUSTOMER_DATABASE.add(customer);
-                LAST_CUSTOMER_ID=customer1.getId();
-                return true;
+            if (customer1.getName().equals(customer.getName())&& customer1.getName().equals(customer.getEmail())){
+                return false;
             }
         }
-        return false;
+        CUSTOMER_DATABASE.add(customer);
+        LAST_CUSTOMER_ID=customer.getId();
+        return true;
+
     }
 
-    public Customer getCustomer(int id)
+    public static Customer getCustomer(int id)
     {
         for (Customer customer: CUSTOMER_DATABASE){
             if (customer.getId() == id){
@@ -34,7 +35,7 @@ public class DatabaseCustomer {
         return null;
     }
 
-    public boolean removeCustomer(int id)
+    public static boolean removeCustomer(int id)
     {
         for (Customer customer: CUSTOMER_DATABASE){
             if (customer.getId() == id){

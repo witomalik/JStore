@@ -127,10 +127,10 @@ public class Supplier
         Matcher m = p.matcher(phoneNumber);
         this.phoneNumber=phoneNumber;
         if(m.find()){
-            System.out.println("phoneNumber: " + m.group());
+            //System.out.println("phoneNumber: " + m.group());
             this.phoneNumber = phoneNumber;
         }else{
-            System.out.println("phoneNumber: NULL");
+            //System.out.println("phoneNumber: NULL");
             this.phoneNumber = "NULL";
     }
     }
@@ -150,7 +150,7 @@ public class Supplier
      * fungsi untuk print variable name
      */
     public String toString(){
-        return "ID :" + id + "Name :" + name + "Email :" + email + "No telpon :" + phoneNumber + "Lokasi Supplier :" + location.getCity();
+        return "\n ID :" + id + "\n Name :" + name + "\n Email :" + email + "\n No telpon :" + phoneNumber + "\n Lokasi Supplier :" + location.getCity();
     }
     
 }

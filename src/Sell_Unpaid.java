@@ -11,7 +11,7 @@ public class Sell_Unpaid extends Invoice {
     // variabel yang digunakan dalam class
     private static final InvoiceType INVOICE_TYPE = InvoiceType.Sell;
     private static final InvoiceStatus INVOICE_STATUS = InvoiceStatus.Unpaid;
-    private Calendar dueDate;
+    private Calendar dueDate = Calendar.getInstance();
     private Customer customer;
     private boolean isActive;
 

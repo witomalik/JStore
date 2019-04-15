@@ -23,6 +23,7 @@ public class DatabaseInvoice
     {
         // return dari accessor
         INVOICE_DATABASE.add(invoice);
+        LAST_INVOICE_ID=invoice.getId();
         return true;
     }
 
@@ -46,7 +47,7 @@ public class DatabaseInvoice
         return null;
     }
 
-    public boolean removeInvoice(int id)
+    public static boolean removeInvoice(int id)
     {
         for(Invoice invoice : INVOICE_DATABASE) {
             if (id == invoice.getId()) {
