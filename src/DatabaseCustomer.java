@@ -12,11 +12,10 @@ public class DatabaseCustomer {
         return LAST_CUSTOMER_ID;
     }
 
-    public static boolean addCustomer(Customer customer)
-    {
+    public static boolean addCustomer(Customer customer) throws CustomerAlreadyExistsException {
         for (Customer customer1 : CUSTOMER_DATABASE){
-            if (customer1.getName().equals(customer.getName())&& customer1.getName().equals(customer.getEmail())){
-                return false;
+            if (customer1.getName().equals(customer.getName()) || customer1.getName().equals(customer.getEmail())){
+                throw new CustomerAlreadyExistsException(customer1);
             }
         }
         CUSTOMER_DATABASE.add(customer);
@@ -35,14 +34,13 @@ public class DatabaseCustomer {
         return null;
     }
 
-    public static boolean removeCustomer(int id)
-    {
+    public static boolean removeCustomer(int id) throws CustomerNotFoundException {
         for (Customer customer: CUSTOMER_DATABASE){
             if (customer.getId() == id){
                 CUSTOMER_DATABASE.remove(customer);
                 return true;
             }
         }
-        return false;
+        throw new CustomerNotFoundException(id);
     }
 }

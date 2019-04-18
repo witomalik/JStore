@@ -11,7 +11,6 @@ public class Item
     // variabel yang digunakan dalam class
     private int id;
     private String name;
-    private int stock;
     private int price;
     private ItemCategory category;
     private ItemStatus status;
@@ -22,18 +21,16 @@ public class Item
      * Constructor for objects of class Item
      * @param id
      * @param name
-     * @param stock
      * @param status
      * @param price
      * @param supplier
      * @param category
      */
-    public Item(int id, String name, int stock, ItemStatus status, int price, Supplier supplier, ItemCategory category)
+    public Item(int id, String name, ItemStatus status, int price, Supplier supplier, ItemCategory category)
     {
         // initialise instance variables
         this.id=id;
         this.name=name;
-        this.stock=stock;
         this.status=status;
         this.price=price;
         this.category=category;
@@ -64,12 +61,7 @@ public class Item
      * Method of class Item
      * @return stock
      */
-    public int getStock()
-    {
-        // return dari accessor 
-        return stock;
-    }
-    
+
     /**
      * Method of class Item
      * @return price
@@ -130,12 +122,7 @@ public class Item
      * Method of class Item
      * @param stock
      */
-    public void setStock(int stock)
-    {
-        // initialise instance variables
-        this.stock=stock;
-    }
-    
+
     /**
      * Method of class Item
      * @param price
@@ -158,7 +145,7 @@ public class Item
     
     /**
      * Method of class Item
-     * @param category
+     * @param
      */
     public void setStatus(ItemStatus status)
     {
@@ -182,7 +169,7 @@ public class Item
      */
 
     public String toString(){
-        return "\n Id: "+id+"\n Name: "+name+"\n Stock: "+stock+"\n Category: "+category+"\n Status: "+status+"\n Supplier: "+supplier.getName();
+        return "\n Id: "+id+"\n Name: "+name+"\n Category: "+category+"\n Status: "+status+"\n Supplier: "+supplier.getName();
     }
     
     
