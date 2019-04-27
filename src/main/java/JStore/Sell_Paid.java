@@ -1,5 +1,6 @@
 
 package JStore;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
 /**
@@ -10,45 +11,58 @@ import java.util.ArrayList;
  */
 public class Sell_Paid extends Invoice
 {
-    // variabel yang digunakan dalam class
-    private static final InvoiceType INVOICE_TYPE=InvoiceType.Sell;
-    private static final InvoiceStatus INVOICE_STATUS=InvoiceStatus.Paid;
+    // instance variables - replace the example below with your own
+    private static final InvoiceType INVOICE_TYPE = InvoiceType.Sell;
+    private static final InvoiceStatus INVOICE_STATUS = InvoiceStatus.Paid;
     private Customer customer;
     private boolean isActive;
 
-    public Sell_Paid( ArrayList<Integer> item, Customer customer)
+    /**
+     * Constructor for objects of class Sell_Paid
+     */
+    public Sell_Paid(ArrayList<Integer> item, Customer customer)
     {
-        super (item);
-        this.isActive=false;
-        this.customer=customer;
+        super(item);
+//        System.out.println(item);
+        this.customer = customer;
+        this.isActive = false;
     }
 
-    public Customer getCustomer()
-    {
+    public Customer getCustomer(){
         return customer;
     }
-    
-    public InvoiceStatus getInvoiceStatus()
-    {
+
+    public InvoiceStatus getInvoiceStatus(){
         return INVOICE_STATUS;
     }
-    
-    public InvoiceType getInvoiceType()
-    {
+
+    public InvoiceType getInvoiceType(){
         return INVOICE_TYPE;
     }
 
-    public String toString() {
-        StringBuilder total = new StringBuilder();
-        for(int a : item){
-            Item temp = DatabaseItem.getItemFormID(a);
-            String stringTemp = null;
-            if (temp != null) {
-                stringTemp = temp.toString();
-                total.append(stringTemp);
-            }
-            total.append("\n");
+    public void setCustomer(Customer customer){
+        this.customer = customer;
+    }
+
+    public String toString(){
+        SimpleDateFormat sdf = new SimpleDateFormat ("dd MMM yyyy");
+        setTotalPrice(0);
+
+        for (int bar : this.getItem()){
+            System.out.println(DatabaseItem.getItemFormID(bar));
         }
-        return total.toString();
+
+        return "====Sell Paid=== \nID= "+this.getId()+
+// "\nItem= "+this.getItem().getId()+
+//        "\nAmount "+this.getTotalItem()+
+                "\nBuy Date: "+sdf.format(getDate().getTime())+
+                // "\nPrice= "+this.getItem().getPrice()+
+                "\nPrice Total: "+getTotalPrice()+
+                // "\nSupplier Id: "+this.getItem().getSupplier().getId()+
+                // "\nSupplier Name= "+ this.getItem().getSupplier().getName() +
+                "\nCustomer ID= "+ getCustomer().getId() +
+                "\nCustomer Name= "+ getCustomer().getName() +
+                "\nStatus: " + InvoiceStatus.Paid +
+                "\nSell Success\n";
     }
 }

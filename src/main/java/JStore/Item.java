@@ -28,10 +28,10 @@ public class Item
      * @param supplier
      * @param category
      */
-    public Item(int id, String name, ItemStatus status, int price, Supplier supplier, ItemCategory category)
+    public Item( String name, ItemStatus status, int price, Supplier supplier, ItemCategory category)
     {
         // initialise instance variables
-        this.id=id;
+        this.id=DatabaseItem.getLastItemID()+1;
         this.name=name;
         this.status=status;
         this.price=price;

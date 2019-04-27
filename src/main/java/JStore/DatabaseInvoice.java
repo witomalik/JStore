@@ -10,8 +10,26 @@ import java.util.ArrayList;
  */
 public class DatabaseInvoice
 {
+    // instance variables - replace the example below with your own
     private static ArrayList<Invoice> INVOICE_DATABASE = new ArrayList<Invoice>();
-    private static int LAST_INVOICE_ID = 0;
+    private static int LAST_INVOICE_ID =0;
+
+    /**
+     * Constructor for objects of class DatabaseInvoice
+     */
+    public DatabaseInvoice()
+    {
+    }
+
+
+    public static Invoice getInvoice(int id){
+        for (Invoice invoice : INVOICE_DATABASE){
+            if (invoice.getId() == id ){
+                return invoice;
+            }
+        }
+        return null;
+    }
 
     public static ArrayList<Invoice> getInvoiceDatabase(){
         return INVOICE_DATABASE;
@@ -21,10 +39,12 @@ public class DatabaseInvoice
         return LAST_INVOICE_ID;
     }
 
-    public static boolean addInvoice(Invoice invoice) throws InvoiceAlreadyExistsException {
-        for (Invoice invoice1: INVOICE_DATABASE) {
-            if ((invoice.getCustomer().equals(invoice1.getCustomer()))) {
+    public static boolean addInvoice (Invoice invoice)
+            throws InvoiceAlreadyExistsException{
+        for(Invoice temp : INVOICE_DATABASE){
+            if(invoice.getCustomer() == temp.getCustomer() && invoice.getItem() == temp.getItem()){
                 throw new InvoiceAlreadyExistsException(invoice);
+//                return false;
             }
         }
         INVOICE_DATABASE.add(invoice);
@@ -32,47 +52,37 @@ public class DatabaseInvoice
         return true;
     }
 
-    public static Invoice getInvoice(int id)
-    {
-        for (Invoice invoice : INVOICE_DATABASE) {
-            if (id == invoice.getId()) {
-                return invoice;
+    public static ArrayList<Invoice> getActiveOrder(Customer customer)
+            throws CustomerDoesntHaveActiveException{
+        ArrayList<Invoice> res = new ArrayList<Invoice>();
+        for(Invoice invoice : INVOICE_DATABASE){
+            if( (invoice.getCustomer() == customer)  && ((invoice.getInvoiceStatus() == InvoiceStatus.Unpaid) || (invoice.getInvoiceStatus() == InvoiceStatus.Installment)) ){
+                res.add(invoice);
             }
         }
-        return null;
-    }
-
-    public static ArrayList<Invoice> getActiveOrder(Customer customer) throws CustomerDoesntHaveActiveException {
-        ArrayList<Invoice> temp = new ArrayList<>();
-        for (Invoice invoice : INVOICE_DATABASE) {
-            if (customer.equals(invoice.getCustomer()) && invoice.getIsActive() && (invoice.getInvoiceStatus().equals(InvoiceStatus.Unpaid)||invoice.getInvoiceStatus().equals(InvoiceStatus.Installment)) ) {
-                temp.add(invoice);
-            }
-        }
-        if(temp.size()>0){
-            return temp;
+        if(res.size() > 0){
+            return res;
         }
         else{
             throw new CustomerDoesntHaveActiveException(customer);
+//            return null;
         }
+
     }
 
-    public static boolean removeInvoice(int id) throws InvoiceNotFoundException {
-        for(Invoice invoice : INVOICE_DATABASE) {
-            if (id == invoice.getId()) {
-                if (invoice.getIsActive()==true) {
+    public static boolean removeInvoice(int id)
+            throws InvoiceNotFoundException{
+        for(Invoice invoice : INVOICE_DATABASE){
+            if(invoice.getId() == id){
+                if (invoice.getIsActive() == true) {
                     invoice.setIsActive(false);
-                    INVOICE_DATABASE.remove(invoice);
-                    return true;
                 }
+                INVOICE_DATABASE.remove(invoice);
+                return true;
             }
         }
         throw new InvoiceNotFoundException(id);
+//        return false;
     }
-    
-    /**
-     * Method of class DatabaseInvoice
-     * @return listSupplier
-     */
 
 }

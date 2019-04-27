@@ -36,6 +36,18 @@ public class DatabaseCustomer {
         return null;
     }
 
+    public static Customer getCustomerLogin(String email, String password)
+    {
+        for(Customer temp : CUSTOMER_DATABASE)
+        {
+            if(temp.getEmail().equals(email) && temp.getPassword().equals(password))
+            {
+                return temp;
+            }
+        }
+        return null;
+    }
+
     public static boolean removeCustomer(int id) throws CustomerNotFoundException {
         for (Customer customer: CUSTOMER_DATABASE){
             if (customer.getId() == id){

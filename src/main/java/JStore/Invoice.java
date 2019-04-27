@@ -79,7 +79,7 @@ import java.util.*;
         }
 
         public void setTotalPrice (int totalPrice) {
-            totalPrice=totalPrice;
+            this.totalPrice = totalPrice;
         }
 
         public void setInvoiceStatus (InvoiceStatus status) {

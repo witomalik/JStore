@@ -21,16 +21,15 @@ public class Supplier
 
     /**
      * Constructor for objects of class Supplier
-     * @param id
      * @param name
      * @param email
      * @param phoneNumber
      * @param location
      */
-    public Supplier(int id, String name, String email, String phoneNumber, Location location)
+    public Supplier(String name, String email, String phoneNumber, Location location)
     {
         // initialise instance variables
-        this.id=id;
+        this.id=DatabaseSupplier.getLastSupplierID()+1;
         this.name=name;
         this.email=email;
         this.setPhoneNumber(phoneNumber);
