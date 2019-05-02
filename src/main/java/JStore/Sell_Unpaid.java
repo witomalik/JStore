@@ -26,7 +26,7 @@ public class Sell_Unpaid extends Invoice
         this.customer = customer;
         this.dueDate = Calendar.getInstance();
         this.dueDate.add(Calendar.DATE,+1);
-        this.isActive = true;
+        setIsActive(true);
     }
 
     public InvoiceStatus getInvoiceStatus(){
@@ -54,8 +54,6 @@ public class Sell_Unpaid extends Invoice
 
     public String toString(){
         SimpleDateFormat sdf = new SimpleDateFormat("dd MMM yyyy");
-        setTotalPrice(0);
-
         for (int bar : this.getItem()){
             System.out.println(DatabaseItem.getItemFormID(bar));
         }

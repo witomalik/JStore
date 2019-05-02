@@ -1,8 +1,5 @@
 package JStore.controller;
-import JStore.DatabaseItem;
-import JStore.DatabaseSupplier;
-import JStore.Item;
-import JStore.Supplier;
+import JStore.*;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

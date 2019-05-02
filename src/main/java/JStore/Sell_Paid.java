@@ -25,7 +25,7 @@ public class Sell_Paid extends Invoice
         super(item);
 //        System.out.println(item);
         this.customer = customer;
-        this.isActive = false;
+        setIsActive(false);
     }
 
     public Customer getCustomer(){
@@ -46,7 +46,6 @@ public class Sell_Paid extends Invoice
 
     public String toString(){
         SimpleDateFormat sdf = new SimpleDateFormat ("dd MMM yyyy");
-        setTotalPrice(0);
 
         for (int bar : this.getItem()){
             System.out.println(DatabaseItem.getItemFormID(bar));

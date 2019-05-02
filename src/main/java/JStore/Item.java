@@ -21,7 +21,6 @@ public class Item
 
     /**
      * Constructor for objects of class Item
-     * @param id
      * @param name
      * @param status
      * @param price

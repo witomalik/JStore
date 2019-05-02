@@ -23,7 +23,6 @@ public class DatabaseCustomer {
         CUSTOMER_DATABASE.add(customer);
         LAST_CUSTOMER_ID=customer.getId();
         return true;
-
     }
 
     public static Customer getCustomer(int id)

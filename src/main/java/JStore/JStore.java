@@ -65,6 +65,17 @@ public class JStore
         catch (ItemAlreadyExistsException e){
             System.out.println(e);
         }
+
+
+        /*try{
+            DatabaseCustomer.addCustomer(new Customer("Udin", "udin@email.com", "udinpetot", "Udin12345",1990, 15, 20));
+        }
+        catch (CustomerAlreadyExistsException e){
+            System.out.println(e);
+        }
+
+         */
+
     }
 
 

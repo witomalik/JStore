@@ -25,7 +25,11 @@ import java.util.*;
         {
             this.id = DatabaseInvoice.getLastInvoiceID() + 1;
             setItem(item);
-            //date = GregorianCalendar.getInstance();
+            for(Integer i : this.item)
+            {
+                totalPrice = totalPrice + DatabaseItem.getItemFormID(i.intValue()).getPrice();
+            }
+            date = GregorianCalendar.getInstance();
         }
 
 
@@ -86,8 +90,8 @@ import java.util.*;
 
         }
 
-        public void setIsActive (boolean isActive){
-            this.isActive=true;
+        public void setIsActive (boolean isActive1){
+            this.isActive=isActive1;
         }
 
         public abstract String toString();

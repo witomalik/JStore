@@ -29,7 +29,8 @@ import java.util.ArrayList;
 //        System.out.println(item);
             this.installmentPeriod = installmentPeriod;
             this.customer = customer;
-            this.isActive = true;
+            setIsActive(true);
+            setInstallmentPrice(getTotalPrice());
         }
 
         public int getInstallmentPeriod(){
@@ -52,13 +53,9 @@ import java.util.ArrayList;
             return INVOICE_TYPE;
         }
 
-        public void setInstallmentPrice(){
-            this.installmentPrice = (getTotalPrice() / installmentPeriod) * 102 / 100 ;
+        public void setInstallmentPrice(int harga){
+            this.installmentPrice = (harga / installmentPeriod) * 102 / 100 ;
         }
-
-        //public void setTotalPrice(){
-        // totalPrice=installmentPrice * installmentPeriod;
-        //}
 
         public void setCustomer(Customer customer){
             this.customer = customer;
@@ -67,8 +64,6 @@ import java.util.ArrayList;
 
         public String toString(){
             SimpleDateFormat sdf = new SimpleDateFormat ("dd MMM yyyy");
-            setTotalPrice(0);
-            setInstallmentPrice();
             for (int bar : getItem()){
                 System.out.println(DatabaseItem.getItemFormID(bar));
             }

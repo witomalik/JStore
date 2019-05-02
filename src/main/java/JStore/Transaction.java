@@ -53,7 +53,7 @@ public class Transaction
         for (Invoice invo : DatabaseInvoice.getInvoiceDatabase()){
             if(invo == invoice){
                 if (invoice.getInvoiceStatus().equals(InvoiceStatus.Unpaid) || invoice.getInvoiceStatus().equals(InvoiceStatus.Installment)){
-                    invo.setIsActive(false);
+                    invoice.setIsActive(false);
                     //invoice1.set(i,invoice);
                     //System.out.println(invo.getIsActive());
                     return true;
@@ -63,13 +63,23 @@ public class Transaction
         return false;
     }
 
-    public static boolean cancelTransaction(Invoice invoice){
-        for (Invoice invo : DatabaseInvoice.getInvoiceDatabase()){
-            if(invo == invoice){
-                if (invoice.getInvoiceStatus().equals(InvoiceStatus.Unpaid) || invoice.getInvoiceStatus().equals(InvoiceStatus.Installment)){
-                    invo.setIsActive(false);
-                    //invoice1.set(i,invoice);
-                    //System.out.println(invo.getIsActive());
+    public static boolean cancelTransaction(Invoice invoice)
+    {
+        if(invoice.getInvoiceStatus().equals(InvoiceStatus.Installment)
+                || invoice.getInvoiceStatus().equals(InvoiceStatus.Unpaid))
+        {
+            for (Invoice invoiceDB : DatabaseInvoice.getInvoiceDatabase())
+            {
+                if (invoiceDB.getId() == invoice.getId())
+                {
+                    try
+                    {
+                        DatabaseInvoice.removeInvoice(invoice.getId());
+                    }
+                    catch (InvoiceNotFoundException e)
+                    {
+                        System.out.println(e.getExMessage());
+                    }
                     return true;
                 }
             }
