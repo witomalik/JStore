@@ -2,35 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1650db1-c3f5-4147-98a4-08bd84f12282" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/JStore/DatabaseConnectionPostgre.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/JStore/DatabaseCustomerPostgre.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/JStore.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/JStore.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/JStore.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/JStore.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/JStore/DatabaseCustomer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/JStore/DatabaseCustomer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/JStore/DatabaseInvoice.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/JStore/DatabaseInvoice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/JStore/Invoice.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/JStore/Invoice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/JStore/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/JStore/Item.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/JStore/JStore.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/JStore/JStore.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/JStore/Sell_Installment.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/JStore/Sell_Installment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/JStore/Sell_Paid.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/JStore/Sell_Paid.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/JStore/Sell_Unpaid.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/JStore/Sell_Unpaid.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/JStore/Transaction.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/JStore/Transaction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/JStore/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/JStore/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/JStore/JStore.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/JStore/Location.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/JStore/controller/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/JStore/controller/CustomerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/JStore/controller/SupplierController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/JStore/controller/SupplierController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/JStore/DatabaseCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JStore/DatabaseCustomer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JStore/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JStore/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/JStore/DatabaseInvoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JStore/DatabaseInvoice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/JStore/Invoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JStore/Invoice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/JStore/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JStore/Item.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/JStore/JStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JStore/JStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/JStore/Sell_Installment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JStore/Sell_Installment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/JStore/Sell_Paid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JStore/Sell_Paid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/JStore/Sell_Unpaid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JStore/Sell_Unpaid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/JStore/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JStore/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JStore/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JStore/Location.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/JStore/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JStore/controller/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/JStore/controller/SupplierController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JStore/controller/SupplierController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JStore/controller/InvoiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JStore/controller/InvoiceController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -89,68 +86,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/JStore/Transaction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1063">
-              <caret line="85" column="9" lean-forward="true" selection-start-line="85" selection-start-column="9" selection-end-line="85" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/JStore/Invoice.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1037">
-              <caret line="94" column="9" lean-forward="true" selection-start-line="94" selection-start-column="9" selection-end-line="94" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/JStore/Sell_Installment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="31" column="30" lean-forward="true" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1699#1700#0" expanded="true" />
-                <element signature="e#1747#1748#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/JStore/Sell_Paid.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="27" column="27" lean-forward="true" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#948#949#0" expanded="true" />
-                <element signature="e#983#984#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/JStore/Sell_Unpaid.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="28" column="26" lean-forward="true" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#970#971#0" expanded="true" />
-                <element signature="e#1005#1006#0" expanded="true" />
-                <element signature="e#1041#1042#0" expanded="true" />
-                <element signature="e#1072#1073#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/JStore/controller/SupplierController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
@@ -165,8 +100,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/JStore/Supplier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+            <state relative-caret-position="2278">
+              <caret line="137" column="4" selection-start-line="137" selection-start-column="4" selection-end-line="137" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -174,8 +109,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/JStore/controller/CustomerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="26" column="28" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+            <state relative-caret-position="323">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#291#292#0" expanded="true" />
@@ -186,14 +121,74 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/JStore/controller/InvoiceController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/JStore/Customer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="64" column="76" selection-start-line="64" selection-start-column="76" selection-end-line="64" selection-end-column="76" />
+            <state relative-caret-position="-408">
+              <caret line="30" column="14" lean-forward="true" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#714#715#0" expanded="true" />
-                <element signature="e#775#776#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/JStore/controller/InvoiceController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="73" selection-start-line="12" selection-start-column="73" selection-end-line="12" selection-end-column="73" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#728#729#0" expanded="true" />
+                <element signature="e#789#790#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/JStore/DatabaseConnectionPostgre.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/JStore/DatabaseCustomerPostgre.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="67" column="90" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="90" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/JStore/DatabaseInvoice.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="49" column="38" lean-forward="true" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
+              <folding>
+                <element signature="e#766#767#0" expanded="true" />
+                <element signature="e#805#806#0" expanded="true" />
+                <element signature="e#848#849#0" expanded="true" />
+                <element signature="e#886#887#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -223,7 +218,13 @@
       <find>stock</find>
       <find>item</find>
       <find>username</find>
+      <find>Desciption</find>
+      <find>haqy</find>
+      <find>DatabaseCustomer</find>
     </findStrings>
+    <replaceStrings>
+      <replace>DatabaseCustomerPostgre</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -231,8 +232,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/DatabaseInvoice.java" />
-        <option value="$PROJECT_DIR$/src/Transaction.java" />
         <option value="$PROJECT_DIR$/src/Supplier.java" />
         <option value="$PROJECT_DIR$/src/DatabaseSupplier.java" />
         <option value="$PROJECT_DIR$/src/ItemAlreadyExistsException.java" />
@@ -247,7 +246,6 @@
         <option value="$PROJECT_DIR$/src/JStore.java" />
         <option value="$PROJECT_DIR$/src/CustomerAlreadyExistsException.java" />
         <option value="$PROJECT_DIR$/src/Invoice.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/JStore/Anggota.java" />
         <option value="$PROJECT_DIR$/src/main/java/JStore/Buy_Paid.java" />
         <option value="$PROJECT_DIR$/src/main/java/JStore/CustomerAlreadyExistsException.java" />
@@ -262,34 +260,36 @@
         <option value="$PROJECT_DIR$/src/main/java/JStore/ItemCategory.java" />
         <option value="$PROJECT_DIR$/src/main/java/JStore/ItemNotFoundException.java" />
         <option value="$PROJECT_DIR$/src/main/java/JStore/ItemStatus.java" />
-        <option value="$PROJECT_DIR$/src/main/java/JStore/Location.java" />
         <option value="$PROJECT_DIR$/src/main/java/JStore/StatusAnggota.java" />
         <option value="$PROJECT_DIR$/src/main/java/JStore/SupplierAlreadyExistsException.java" />
         <option value="$PROJECT_DIR$/src/main/java/JStore/SupplierNotFoundException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/JStore/Customer.java" />
         <option value="$PROJECT_DIR$/src/main/java/JStore/controller/ItemController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/JStore/Supplier.java" />
-        <option value="$PROJECT_DIR$/src/main/java/JStore/controller/InvoiceController.java" />
         <option value="$PROJECT_DIR$/src/main/java/JStore/DatabaseSupplier.java" />
-        <option value="$PROJECT_DIR$/src/main/java/JStore/JStore.java" />
         <option value="$PROJECT_DIR$/src/main/java/JStore/controller/SupplierController.java" />
         <option value="$PROJECT_DIR$/src/main/java/JStore/Item.java" />
-        <option value="$PROJECT_DIR$/src/main/java/JStore/DatabaseInvoice.java" />
         <option value="$PROJECT_DIR$/src/main/java/JStore/DatabaseCustomer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/JStore/controller/CustomerController.java" />
         <option value="$PROJECT_DIR$/src/main/java/JStore/Transaction.java" />
         <option value="$PROJECT_DIR$/src/main/java/JStore/Sell_Installment.java" />
         <option value="$PROJECT_DIR$/src/main/java/JStore/Invoice.java" />
         <option value="$PROJECT_DIR$/src/main/java/JStore/Sell_Paid.java" />
         <option value="$PROJECT_DIR$/src/main/java/JStore/Sell_Unpaid.java" />
+        <option value="$PROJECT_DIR$/src/main/java/JStore/Supplier.java" />
+        <option value="$PROJECT_DIR$/src/main/java/JStore/JStore.java" />
+        <option value="$PROJECT_DIR$/src/main/java/JStore/Location.java" />
+        <option value="$PROJECT_DIR$/src/main/java/JStore/DatabaseConnectionPostgre.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/JStore/DatabaseCustomerPostgre.java" />
+        <option value="$PROJECT_DIR$/src/main/java/JStore/controller/CustomerController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/JStore/Customer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/JStore/controller/InvoiceController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/JStore/DatabaseInvoice.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="442" />
-    <option name="y" value="168" />
+    <option name="x" value="-7" />
     <option name="width" value="974" />
-    <option name="height" value="746" />
+    <option name="height" value="1087" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -297,8 +297,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -345,6 +343,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -432,8 +432,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19402985" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17963752" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -442,7 +443,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.1640706" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.15991692" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997923" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -494,8 +495,6 @@
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Transaction.java" />
-    <entry file="file://$PROJECT_DIR$/src/Supplier.java" />
     <entry file="file://$PROJECT_DIR$/src/DatabaseSupplier.java" />
     <entry file="file://$PROJECT_DIR$/src/ItemAlreadyExistsException.java" />
     <entry file="file://$PROJECT_DIR$/src/JStore.java" />
@@ -510,13 +509,6 @@
     <entry file="file://$PROJECT_DIR$/src/CustomerNotFoundException.java" />
     <entry file="file://$PROJECT_DIR$/src/DatabaseCustomer.java" />
     <entry file="file://$PROJECT_DIR$/src/SupplierAlreadyExistsException.java" />
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/JStore/Anggota.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -601,13 +593,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JStore/Location.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/JStore/StatusAnggota.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -629,49 +614,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JStore/Buy_Paid.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JStore/JStore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1309">
-          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/JStore/controller/ItemController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="31" column="55" lean-forward="true" selection-start-line="31" selection-start-column="55" selection-end-line="31" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JStore/Item.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JStore/DatabaseInvoice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1377">
-          <caret line="85" column="9" selection-start-line="85" selection-start-column="9" selection-end-line="85" selection-end-column="9" />
-          <folding>
-            <element signature="e#766#767#0" expanded="true" />
-            <element signature="e#805#806#0" expanded="true" />
-            <element signature="e#848#849#0" expanded="true" />
-            <element signature="e#886#887#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -690,13 +638,78 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JStore/Customer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/JStore/Transaction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3247">
-          <caret line="194" column="31" selection-start-line="194" selection-start-column="31" selection-end-line="194" selection-end-column="31" />
+        <state relative-caret-position="1411">
+          <caret line="85" column="9" selection-start-line="85" selection-start-column="9" selection-end-line="85" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/JStore/JStore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/JStore/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2788">
+          <caret line="164" column="5" selection-start-line="29" selection-start-column="4" selection-end-line="164" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/JStore/Sell_Paid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="541">
+          <caret line="51" column="9" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/JStore/Buy_Paid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/JStore/Invoice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/JStore/Sell_Installment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/JStore/Sell_Unpaid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/JStore/Location.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="58" column="27" selection-start-line="58" selection-start-column="27" selection-end-line="58" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -712,8 +725,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/JStore/Supplier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+        <state relative-caret-position="2278">
+          <caret line="137" column="4" selection-start-line="137" selection-start-column="4" selection-end-line="137" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/JStore/controller/CustomerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#291#292#0" expanded="true" />
+            <element signature="e#329#330#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/JStore/DatabaseConnectionPostgre.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -724,78 +766,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JStore/controller/CustomerController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/JStore/Customer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="26" column="28" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+        <state relative-caret-position="-408">
+          <caret line="30" column="14" lean-forward="true" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#291#292#0" expanded="true" />
-            <element signature="e#329#330#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/JStore/DatabaseCustomerPostgre.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="67" column="90" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="90" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/JStore/controller/InvoiceController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="64" column="76" selection-start-line="64" selection-start-column="76" selection-end-line="64" selection-end-column="76" />
+        <state relative-caret-position="204">
+          <caret line="12" column="73" selection-start-line="12" selection-start-column="73" selection-end-line="12" selection-end-column="73" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#714#715#0" expanded="true" />
-            <element signature="e#775#776#0" expanded="true" />
+            <element signature="e#728#729#0" expanded="true" />
+            <element signature="e#789#790#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JStore/Transaction.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/JStore/DatabaseInvoice.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1063">
-          <caret line="85" column="9" lean-forward="true" selection-start-line="85" selection-start-column="9" selection-end-line="85" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JStore/Invoice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="94" column="9" lean-forward="true" selection-start-line="94" selection-start-column="9" selection-end-line="94" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JStore/Sell_Installment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="31" column="30" lean-forward="true" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+        <state relative-caret-position="221">
+          <caret line="49" column="38" lean-forward="true" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1699#1700#0" expanded="true" />
-            <element signature="e#1747#1748#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JStore/Sell_Paid.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="27" column="27" lean-forward="true" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#948#949#0" expanded="true" />
-            <element signature="e#983#984#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JStore/Sell_Unpaid.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="28" column="26" lean-forward="true" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#970#971#0" expanded="true" />
-            <element signature="e#1005#1006#0" expanded="true" />
-            <element signature="e#1041#1042#0" expanded="true" />
-            <element signature="e#1072#1073#0" expanded="true" />
+            <element signature="e#766#767#0" expanded="true" />
+            <element signature="e#805#806#0" expanded="true" />
+            <element signature="e#848#849#0" expanded="true" />
+            <element signature="e#886#887#0" expanded="true" />
           </folding>
         </state>
       </provider>

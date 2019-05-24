@@ -30,6 +30,18 @@ public class Customer
      * @param 
      * @param 
      */
+
+    public Customer(int id, String name, String email, String username, String password, Calendar birthDate)
+    {
+        // initialise instance variables
+        this.name=name;
+        this.email=email;
+        this.username=username;
+        this.password=password;
+        this.id=id;
+        this.birthDate=birthDate;
+    }
+
     public Customer(String name, String email, String username, String password, Calendar birthDate)
     {
         // initialise instance variables
@@ -37,7 +49,7 @@ public class Customer
         this.email=email;
         this.username=username;
         this.password=password;
-        this.id=DatabaseCustomer.getLastCustomerID()+1;
+        this.id=DatabaseCustomerPostgre.getLastCustomerId()+1;
         this.birthDate=birthDate;
         this.birthDate.add(Calendar.MONTH, -1);
     }
@@ -49,7 +61,7 @@ public class Customer
         this.email=email;
         this.username=username;
         this.password=password;
-        this.id=DatabaseCustomer.getLastCustomerID()+1;
+        this.id=DatabaseCustomerPostgre.getLastCustomerId()+1;
         this.birthDate=new GregorianCalendar(year,month-1,dayOfMonth);
     }
     

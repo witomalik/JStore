@@ -53,7 +53,7 @@ public class Location
      * Method for objects of class Location
      * @return description
      */
-    public String getDesciption()
+    public String getDescription()
     {
         // return dari accessor 
         return description;

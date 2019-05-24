@@ -24,20 +24,7 @@ public class JStore
         catch (SupplierAlreadyExistsException e){
             System.out.println(e);
         }
-        Supplier sup2 = new Supplier("Wito", "wi@gmail.com", "+62987654323", location1);
-        try {
-            DatabaseSupplier.addSupplier(sup2);
-        }
-        catch (SupplierAlreadyExistsException e){
-            System.out.println(e);
-        }
-        Supplier sup3 = new Supplier("Malik", "ma@ui.ac.id", "62987654325", location1);
-        try {
-            DatabaseSupplier.addSupplier(sup3);
-        }
-        catch (SupplierAlreadyExistsException e){
-            System.out.println(e);
-        }
+
 
         try{
             DatabaseItem.addItem(new Item("Ipad", ItemStatus.New, 34098, DatabaseSupplier.getSupplier(1),ItemCategory.Electronics));
@@ -46,25 +33,18 @@ public class JStore
             System.out.println(e);
         }
         try{
-            DatabaseItem.addItem(new Item("Sarasa", ItemStatus.New, 12451, DatabaseSupplier.getSupplier(2),ItemCategory.Stationery));
+            DatabaseItem.addItem(new Item("Sarasa", ItemStatus.New, 12451, DatabaseSupplier.getSupplier(1),ItemCategory.Stationery));
+        }
+        catch (ItemAlreadyExistsException e){
+            System.out.println(e);
+        }
+        try{
+            DatabaseItem.addItem(new Item("Meja", ItemStatus.New, 567436, DatabaseSupplier.getSupplier(1),ItemCategory.Furniture));
         }
         catch (ItemAlreadyExistsException e){
             System.out.println(e);
         }
 
-        try{
-            DatabaseItem.addItem(new Item("Meja", ItemStatus.New, 567436, DatabaseSupplier.getSupplier(3),ItemCategory.Furniture));
-        }
-        catch (ItemAlreadyExistsException e){
-            System.out.println(e);
-        }
-
-        try{
-            DatabaseItem.addItem(new Item("Charger", ItemStatus.New, 434234, DatabaseSupplier.getSupplier(3),ItemCategory.Electronics));
-        }
-        catch (ItemAlreadyExistsException e){
-            System.out.println(e);
-        }
 
 
         /*try{

@@ -56,7 +56,7 @@ public class DatabaseInvoice
             throws CustomerDoesntHaveActiveException{
         ArrayList<Invoice> res = new ArrayList<Invoice>();
         for(Invoice invoice : INVOICE_DATABASE){
-            if( (invoice.getCustomer() == customer)  && ((invoice.getInvoiceStatus() == InvoiceStatus.Unpaid) || (invoice.getInvoiceStatus() == InvoiceStatus.Installment)) ){
+            if( (invoice.getCustomer().getId() == customer.getId())  && ((invoice.getInvoiceStatus() == InvoiceStatus.Unpaid) || (invoice.getInvoiceStatus() == InvoiceStatus.Installment)) ){
                 res.add(invoice);
             }
         }
